@@ -47,6 +47,7 @@ export const checkIsLiked = (likeList: string[], userId: string) => {
   return likeList.includes(userId);
 };
 
+export const convertFileToUrl = (file: File) => URL.createObjectURL(file);
 // export const checkIsLiked = (likeList: string[], userId: string) => {
 //   if (Array.isArray(likeList)) {
 //     return likeList.includes(userId);
